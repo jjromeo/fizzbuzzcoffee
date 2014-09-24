@@ -1,0 +1,7 @@
+{
+  "name": "fizzbuzz",
+  "description": "fizzbuzz in coffeescript",
+  "dependencies": {
+    "chai": "^1.9.1"
+  }
+}
