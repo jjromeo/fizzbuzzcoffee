@@ -1,12 +1,18 @@
 class Fizzbuzz
-  isDivisibleByThree: (number) ->
+  _isDivisibleByThree: (number) ->
     number % 3 == 0
 
-  isDivisibleByFive: (number) ->
+  _isDivisibleByFive: (number) ->
     number % 5 == 0
 
-  isDivisibleByFifteen: (number) ->
+  _isDivisibleByFifteen: (number) ->
     number % 15 == 0
+
+  fizzbuzz: (number) ->
+    return 'fizzbuzz' if @_isDivisibleByFifteen number
+    return 'fizz' if @_isDivisibleByThree number
+    return 'buzz' if @_isDivisibleByFive number
+    return number
 
 
 
